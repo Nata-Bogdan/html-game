@@ -1,0 +1,75 @@
+body {
+    font-family: verdana;
+    background-color: #75B760;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+header {
+    height: 10vh;
+}
+
+header h2 {
+    position: absolute;
+    margin-top: 2.5vh;
+    left: 20%;
+}
+
+main {
+    padding-top: 45vh;
+    padding-bottom: 15vh;
+}
+
+main a {
+    background-color: #AEFC89;
+    color: #001524;
+    font-size: xxx-large;
+    font-weight: bold;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 13%;
+    padding-right: 13%;
+    border-radius: 50px;
+    text-decoration: 0;
+}
+
+.button:hover {
+    background-color: #CCFFBB;
+}
+
+.button:active {
+    background-color: #DCFFDD;
+}
+
+footer {
+    height: 13vh;
+    bottom: 0;
+}
+
+footer h2 {
+    position: absolute;
+    left: 40%;
+    top: 2vh;
+}
+
+footer p {
+    position: absolute;
+    left: 35%;
+    top: 7vh;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LVL2: Let's Make it Shine!</title>
+    <link rel="stylesheet" type="text/css" href="lvl2.css">
+</head>
+
+<body>
+
+    <div class="container">
+    <section class="droppable-elements">
+        <div class="droppable" data-draggable-id="battery"><span>?</span></div>
+        <div><img class="wire" src="/elements/wire.png"></div>
+        <div class="droppable" data-draggable-id="lamp"><span>?</span></div>
+    </section>
+    </div>
+
+    <div class="lvl">
+        <a class="previousLVLBtn" href="/lvl1/dnd.html"><img src="/elements/arrow.png"></a>
+        <h1>Let's Make it Shine!</h1>
+        <a class="nextLVLBtn" href="/lvl3/lvl3.html"><img src="/elements/arroww.png"></a>
+    </div>
+
+    <div class="inventory">
+        <div class="slot"><i class="fas draggable btn" draggable="true" style="color: #ff6384;" id="btn"></i></div>
+        <div class="slot"><i class="fas draggable lamp" draggable="true" style="color: #36a2eb;" id="lamp"></i></div>
+        <div class="slot"><i class="fas draggable battery" draggable="true" style="color: #ffce56;" id="battery"></i></div>
+        <div class="slot"><i class="fas draggable bell" draggable="true" style="color: #9966ff;" id="bell"></i></div>
+        <div class="slot"><i class="fas draggable wires" draggable="true" style="color: #4bc0c0;" id="wires"></i></div>
+    </div>
+
+    <script src="lvl2.js"></script>
+</body>
+</html>

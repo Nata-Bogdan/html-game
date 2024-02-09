@@ -1,0 +1,67 @@
+body {
+    font-family: verdana;
+    background-color: #75B760;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+header {
+    height: 10vh;
+}
+
+header h2 {
+    position: absolute;
+    margin-top: 2.5vh;
+    left: 20%;
+}
+
+footer {
+    height: 13vh;
+    bottom: 0;
+}
+
+footer h2 {
+    position: absolute;
+    left: 40%;
+    top: 2vh;
+}
+
+footer p {
+    position: absolute;
+    left: 35%;
+    top: 7vh;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 42vh;
+}
+
+.button {
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.end:hover {
+    transform: scale(1.5);
+    transition: transform 0.2s, background-color 0.4s;
+}

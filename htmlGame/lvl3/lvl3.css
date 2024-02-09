@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #75B760;
+  color: #111;
+}
+
+.draggable-elements {
+  display: flex;
+  justify-content: center;
+}
+.draggable {
+  height: 130px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 0rem 0.5rem;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+.draggable:hover {
+  opacity: 0.5;
+}
+.droppable {
+  height: 238px;
+  width: 180px;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: #F4F4F4;
+  border: 10px dashed #FAE100;
+  border-radius: 30px;
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 47vh;
+  justify-content: center;
+}
+
+.wire {
+  margin-top: 21vh;
+  width: 15rem;
+  height: 2rem;
+  background-color: red;
+}
+
+.droppable-elements {
+    display: flex;
+    flex-direction: row;
+}
+
+.droppable span {
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+/* Drag and Drop Related Styling */
+
+.droppable.droppable-hover {
+  border-width: 5px;
+  transform: scale(1.1);
+}
+.droppable.dropped {
+  border-color: #7BEF55;  
+  border-style: solid;
+  color: #fff;
+}
+.droppable.dropped span {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+.droppable.dropped i {
+  pointer-events: none;
+}
+.draggable.dragged {
+  user-select: none;
+  opacity: 0.1;
+  cursor: default;
+}
+.draggable.dragged:hover {
+  opacity: 0.1;
+}
+
+/* inventory style */
+
+.btn {
+  background-image: url(/elements/button.png);
+  width: 127px;
+  height: 128px;
+  border-radius: 30px;
+  margin-top: 18%;
+  margin-left: 20%;
+}
+
+.battery {
+  background-image: url(/elements/battery.png);
+  width: 119px;
+  height: 181px;
+  margin-top: 6%;
+  margin-left: 20%;
+}
+
+.lamp {
+  background-image: url(/elements/lamp.png);
+  width: 128px;
+  height: 167px;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.bell {
+  background-image: url(/elements/bell.png);
+  width: 127px;
+  height: 160px;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+
+.wires {
+  background-image: url(/elements/wires.png);
+  width: 109px;
+  height: 181px;
+  margin-top: 7%;
+  margin-left: 24%;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 14px; }
+  .draggable-elements { margin: 1.5rem; }
+}
+
+.inventory {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40vh;
+  background-color: #001524;
+  padding-left: 3vh;
+  padding-right: 3vh;
+}
+
+.slot {
+  width: 20%;
+  height: 34vh;
+  background-color: #475560;
+  border: 10px;
+  border-color: red;
+  border-radius: 30px;
+  margin-top: 3vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
+
+/* lvl */
+
+a img {
+  width: 80px;
+}
+
+a img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s, background-color 0.4s;
+}
+
+h1 {
+  margin-top: 2vh;
+  font-weight: bolder;
+  margin-left: 7vh;
+  margin-right: 7vh;
+}
+
+.lvl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1vh;
+}
