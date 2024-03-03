@@ -40,6 +40,7 @@ body {
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
+  color: #ffffff00;
   background-color: #F4F4F4;
   border: 10px dashed #FAE100;
   border-radius: 30px;
@@ -82,7 +83,7 @@ body {
   color: #fff;
 }
 .droppable.dropped span {
-  font-size: 0.75rem;
+  font-size: 3rem;
   margin-top: 0.5rem;
 }
 .droppable.dropped i {
